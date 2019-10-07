@@ -19,7 +19,6 @@ module.exports = function({graphiql, cors, pretty} = {graphiql: true, cors: true
   router.use(bodyParser.json());
 
   const expressGraphqlReady = buildSchema({
-    region,
     appId: process.env.LEANCLOUD_APP_ID,
     appKey: process.env.LEANCLOUD_APP_KEY,
     masterKey: process.env.LEANCLOUD_APP_MASTER_KEY
