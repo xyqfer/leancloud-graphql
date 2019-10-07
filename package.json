@@ -8,7 +8,8 @@
     "url": "https://github.com/xyqfer/leancloud-graphql"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "publish:npm": "npm publish --access=public --registry=https://registry.npmjs.org/"
   },
   "engines": {
     "node": "10.x"
