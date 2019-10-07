@@ -55,7 +55,7 @@ const LCTypeMapping = {
 
 module.exports = function buildSchema({appId, appKey, masterKey}) {
   return request({
-    url: 'https://api.leancloud.cn/1.1/schemas',
+    url: `${process.env.LEANCLOUD_API_SERVER}/1.1/schemas`,
     json: true,
     headers: {
       'X-LC-Id': appId,
