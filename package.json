@@ -1,33 +1,33 @@
 {
-  "name": "leancloud-graphql",
-  "version": "0.4.0",
-  "description": "Third party GraphQL support for LeanCloud, running on LeanEngine",
+  "name": "@xyqfer/leancloud-graphql-express-middleware",
+  "version": "1.0.0",
+  "description": "GraphQL support for LeanCloud, running on express middleware",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/leancloud/leancloud-graphql"
+    "url": "https://github.com/xyqfer/leancloud-graphql"
   },
   "scripts": {
     "test": "mocha"
   },
   "engines": {
-    "node": "6.x"
+    "node": "10.x"
   },
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "cors": "^2.8.1",
-    "express-graphql": "^0.6.7",
-    "express": ">=4.0.0",
-    "graphql": "^0.10.5",
-    "leancloud-storage": ">=2.0.0",
-    "leanengine": ">=2.0.0",
-    "lodash": ">=4.0.0",
-    "request-promise": "^4.1.1",
-    "request": "^2.79.0"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "leancloud-storage": "^3.15.0",
+    "leanengine": "^3.4.0",
+    "lodash": "^4.17.15",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "supertest": "^2.0.1",
+    "chai": "^4.2.0",
+    "supertest": "^4.0.2",
     "supertest-as-promised": "^4.0.2"
   }
 }
