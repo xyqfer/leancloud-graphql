@@ -65,7 +65,7 @@ module.exports = function buildSchema({appId, appKey, masterKey}) {
     return _.mapValues(cloudSchemas, (schema, className) => {
       return _.omitBy(schema, (definition, field) => {
         if (field.startsWith('__')) {
-          console.error(`[leancloud-graphql] Ignored invalid GraphQL field name \`${className}.${field}\``);
+          console.log(`[leancloud-graphql] Ignored invalid GraphQL field name \`${className}.${field}\``);
           return true;
         }
       });
